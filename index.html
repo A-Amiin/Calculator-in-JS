@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <!-- The First Way To Do The Calculator Into Three Different Input Fields -->
+
+    <div id="calculator">
+        <input id="dispaly" readonly>
+        <div id="keys">
+            <button onclick="clearDisplay()" class="operator-btn">C</button>
+            <button onclick="toDispaly('^')" class="operator-btn">^</button>
+            <button onclick="toDispaly('(')" class="operator-btn">(</button>
+            <button onclick="toDispaly(')')" class="operator-btn">)</button>
+            <button onclick="toDispaly('+')" class="operator-btn">+</button>
+            <button onclick="toDispaly('7')">7</button>
+            <button onclick="toDispaly('8')">8</button>
+            <button onclick="toDispaly('9')">9</button>
+            <button onclick="toDispaly('-')" class="operator-btn">-</button>
+            <button onclick="toDispaly('4')">4</button>
+            <button onclick="toDispaly('5')">5</button>
+            <button onclick="toDispaly('6')">6</button>
+            <button onclick="toDispaly('*')" class="operator-btn">*</button>
+            <button onclick="toDispaly('1')">1</button>
+            <button onclick="toDispaly('2')">2</button>
+            <button onclick="toDispaly('3')">3</button>
+            <button onclick="toDispaly('/')" class="operator-btn">/</button>
+            <button onclick="toDispaly('0')">0</button>
+            <button onclick="toDispaly('.')">.</button>
+            <button onclick="calculate()" class="operator-btn">=</button>
+        </div>
+    </div>
+
+    <!-- The Second Way To Do The Calculator Into Three Different Input Fields -->
+
+    <!-- <div class="contain">
+        <div class="containear">
+            <input class="middle" type="number" id="num1" placeholder="Enter first number">
+                <select class="middle" id="operator">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                    <option value="^">^</option>
+                </select>
+            <input class="middle" type="number" id="num2" placeholder="Enter second number">
+            <button onclick="calculate()">=</button>
+            <input class="middle" type="text" id="output" placeholder="Result" readonly>
+        </div>
+    </div> -->
+
+    <script src="./JS.js"></script>
+</body>
+</html>
